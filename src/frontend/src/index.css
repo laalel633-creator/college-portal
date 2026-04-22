@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-display: system-ui, sans-serif;
+    --font-body: system-ui, sans-serif;
+    --font-mono: "Courier New", monospace;
+    --radius: 0.25rem;
+
+    --background: 0.97 0 0;
+    --foreground: 0.18 0 0;
+    --card: 0.99 0 0;
+    --card-foreground: 0.18 0 0;
+    --popover: 0.99 0 0;
+    --popover-foreground: 0.18 0 0;
+
+    --primary: 0.45 0.15 240;
+    --primary-foreground: 0.99 0 0;
+
+    --secondary: 0.93 0 0;
+    --secondary-foreground: 0.18 0 0;
+    --muted: 0.92 0 0;
+    --muted-foreground: 0.48 0 0;
+
+    --accent: 0.45 0.15 240;
+    --accent-foreground: 0.99 0 0;
+
+    --destructive: 0.55 0.2 25;
+    --destructive-foreground: 0.99 0 0;
+
+    --border: 0.88 0 0;
+    --input: 0.88 0 0;
+    --ring: 0.45 0.15 240;
+
+    --chart-1: 0.45 0.15 240;
+    --chart-2: 0.6 0.12 185;
+    --chart-3: 0.65 0.15 90;
+    --chart-4: 0.55 0.1 25;
+    --chart-5: 0.7 0.1 270;
+
+    --sidebar: 0.97 0 0;
+    --sidebar-foreground: 0.18 0 0;
+    --sidebar-primary: 0.45 0.15 240;
+    --sidebar-primary-foreground: 0.99 0 0;
+    --sidebar-accent: 0.92 0 0;
+    --sidebar-accent-foreground: 0.18 0 0;
+    --sidebar-border: 0.88 0 0;
+    --sidebar-ring: 0.45 0.15 240;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+}

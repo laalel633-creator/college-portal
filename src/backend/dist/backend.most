@@ -1,0 +1,25 @@
+// Version: 1.0.0
+type Application__206602644 = Application__678882009;
+type Application__678882009 =
+  {courseChoice : Text; email : Text; id : Nat; name : Text; phone : Text};
+type ContactMessage__1064088129 = ContactMessage__84138439;
+type ContactMessage__84138439 =
+  {email : Text; id : Nat; message : Text; name : Text};
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+actor {
+  stable applications :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Application__206602644]];
+      var elementIndex : Nat__490723111
+    };
+  stable contactMessages :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?ContactMessage__1064088129]];
+      var elementIndex : Nat__490723111
+    };
+  stable var nextAppId : Nat;
+  stable var nextContactId : Nat
+};

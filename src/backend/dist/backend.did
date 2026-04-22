@@ -1,0 +1,59 @@
+type Student = 
+ record {
+   enrolledCourse: text;
+   grades: vec Grade;
+   name: text;
+   personalDetails: PersonalDetails;
+   studentId: text;
+ };
+type StaffMember = 
+ record {
+   email: text;
+   name: text;
+   role: text;
+   staffId: text;
+ };
+type PersonalDetails = 
+ record {
+   address: text;
+   phone: text;
+ };
+type Grade = 
+ record {
+   grade: text;
+   score: nat;
+   subject: text;
+ };
+type Course = 
+ record {
+   code: text;
+   description: text;
+   entryRequirements: text;
+   name: text;
+ };
+type ContactMessage = 
+ record {
+   email: text;
+   id: nat;
+   message: text;
+   name: text;
+ };
+type Application = 
+ record {
+   courseChoice: text;
+   email: text;
+   id: nat;
+   name: text;
+   phone: text;
+ };
+service : {
+  getApplications: () -> (vec Application) query;
+  getContactMessages: () -> (vec ContactMessage) query;
+  getCourses: () -> (vec Course) query;
+  getStaff: () -> (vec StaffMember) query;
+  getStudent: () -> (Student) query;
+  login: (username: text, password: text) -> (opt Student);
+  submitApplication: (name: text, email: text, phone: text, courseChoice:
+   text) -> (nat);
+  submitContactMessage: (name: text, email: text, message: text) -> (nat);
+}

@@ -1,0 +1,21 @@
+{
+  "overview": "A casual, friendly college demo website with 7 pages including a student portal, built with React and Tailwind in a simple, approachable style.",
+  "features": [
+    "Home page with welcome text and announcements",
+    "Courses page listing 3 programmes with codes and entry requirements",
+    "Staff directory with names, roles, emails, and IDs",
+    "Login page with demo credentials",
+    "Application form for prospective students",
+    "Contact page with college info and message form",
+    "Student portal with grades and personal details"
+  ],
+  "category": "education",
+  "tags": [
+    "college",
+    "education",
+    "demo",
+    "student-portal",
+    "simple"
+  ],
+  "last_updated": "2026-04-22T09:11:32.178Z"
+}
